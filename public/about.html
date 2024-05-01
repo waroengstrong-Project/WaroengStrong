@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <style type="text/css">
+        body {
+          background-image: url('https://i.pinimg.com/564x/c3/71/68/c37168119b17d390315f8cbe8bb324ac.jpg');
+          margin: 0; /* Menyingkirkan margin default */
+          padding: 0; /* Menyingkirkan padding default */
+        }
+
+        header {
+            background-color: #1f1d1d52;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 20px 0;
+            float: none; 
+        }
+
+        nav {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            float: right; 
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        nav ul li a:hover {
+            color: white;
+        }
+
+        main {
+            text-align: center;
+            width: 100%;
+            margin-bottom: auto;
+            display: flex; /* Menggunakan Flexbox */
+            flex-wrap: wrap; /* Mengizinkan wrap item */
+            justify-content: center; /* Mengatur posisi item di tengah */
+            align-items: stretch; /* Membuat item mengisi tinggi container */
+        }
+
+        footer {
+            margin-top: auto;
+        }
+
+        /* Element Selector */
+        div {
+            margin: 20px;
+            padding: 10px;
+            border: 3px solid black;
+            background-color: rgba(244, 239, 220, 0.726);
+            flex: 1; /* Mengatur agar kotak memiliki lebar yang sama */
+            max-width: 400px; /* Maksimum lebar kotak */
+        }
+
+        .Makanan p {
+            font-size: 16px;
+            font-family: "courier";
+            line-height: 1.5;
+            color: black;
+        }
+
+        /* Class Selector */
+        .type {
+            display: inline-block;
+        }
+
+        .BasrengAsin {
+            margin-top: 30px;
+            background-color: rgba(244, 239, 220, 0.726);
+        }
+
+        /* ID Selector */
+        #list {
+            border-color: rgb(21, 20, 20);
+            background-color: rgba(244, 239, 220, 0.726);
+        }
+
+        /* Attribute Selector */
+        img[alt="crunchy"] {
+            border-color: green;
+        }
+
+        /* Universal Selector */
+        * {
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <hr>
+    <header>
+        <h1>Produk</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr/>
+     <main>
+        <div class="list" id="list">
+            <p>Cicipi kelezatan Basreng kami yang unik dan menggugah selera, dari Basreng Pedas yang menggigit, Basreng Asin yang gurih, hingga Makaroni Pedas yang menyala di lidah. Temukan sensasi baru dalam setiap gigitan dan nikmati pengalaman camilan yang tak terlupakan bersama kami! </p>
+            <img src="../asset/images/list.jpeg" alt="list" width="200" height="200">
+        </div>
+        
+        <div class="BasrengPedas" id="BasrengPedas">
+            <p>Rasakan sensasi pedas yang memikat dan kelezatan gurih dalam setiap gigitan Basreng Pedas kami. Dibuat dengan rempah-rempah pilihan dan teknik penggorengan khusus, Basreng Pedas kami siap memanjakan lidah Anda dan memberikan pengalaman camilan yang tak terlupakan. Segera nikmati cita rasa yang menggugah selera hanya dengan Basreng Pedas kami!</p>
+            <img src="../asset/images/basreng pedas.jpeg" alt="kimbap-roll" width="200" height="200">
+        </div>
+
+         <div class="BasrengAsin">
+            <p>
+                Nikmati kenikmatan gurih yang memikat dari Basreng Asin kami yang krispy dan lezat. Dibuat dengan bumbu-bumbu pilihan dan proses penggorengan yang teliti, Basreng Asin kami menawarkan pengalaman camilan yang memuaskan dengan setiap gigitannya. Segera rasakan sensasi gurih yang tiada tara dengan Basreng Asin kami yang siap menggugah selera Anda!</p>
+            <img src="../asset/images/basreng asin.jpeg" alt="Basreng Asin" width="200" height="200">
+        </div>
+        
+        <div class="Makaroni">
+            <p>Rasakan ledakan rasa pedas yang menggugah selera dengan Makaroni Pedas kami yang renyah dan memikat. Dibuat dengan bumbu pedas yang khas dan teknik penggorengan yang sempurna, setiap helai makaroni dipenuhi dengan cita rasa yang menggelora. Sajikan sebagai camilan istimewa untuk menambahkan kegembiraan pada setiap momen bersama keluarga dan teman-teman.</p>
+            <img src="../asset/images/makaroni.jpeg" alt="Makaroni Pedas-fried-chicken"  width="200" height="200">
+        </div>
+    </main>
+</body>
+</html>
